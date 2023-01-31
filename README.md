@@ -1,12 +1,12 @@
-# Title: "insert title here"
+# Title: Instagram Popularity
+
+![](![cs152](https://user-images.githubusercontent.com/98056010/215841542-cb9a83f4-8414-4965-834e-a7e548a5c657.jpg)
 
 ## Project Description
 
-I will focus on training neural networks (NNs) for the task of navigating a simulated "maze". A robot will be placed in a simulated environment (similar to the image above) and the NN will direct the robot to follow turn-by-turn directions from a starting location to an ending location. The simulator already exists, but a new dataset will need to be created, either manually or using an automated process.
+My project will focus on training neural networks (NNs) to predict the popularity of instagram posts. I want to determine which aspects of a post, its aestehtic value, the image content, and social metadata impact the popularity (otherwise known as viralness) of a post. 
 
-The trained NN will be "deployed" as an application by putting the NN in new, unseen environments and testing its performance. If all goes well, then an extension of this work will include changing the simulation textures and lighting and training the NN to work when facing unseen textures.
-
-The longer-term goal is to use a NN to enable better navigation in complex environments for a robot with multiple modes of locomotion (i.e., wheeled and flight). The results from this work will feed into an on-going project where we are trying to "cross the reality gap" that exists between simulation and the real world.
+The longer term goal is to predict the popularity of longer videos like tiktoks and instagram reels to determine which videos may become viral.
 
 ## Project Goals
 
