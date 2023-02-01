@@ -1,4 +1,4 @@
-# Title: Instagram Popularity
+# Instagram Popularity
 
 ![cs152](https://user-images.githubusercontent.com/98056010/215841542-cb9a83f4-8414-4965-834e-a7e548a5c657.jpg)
 
