@@ -7,6 +7,7 @@
 #### Five to Ten Sentence Outline:
 Paragraph 1. Introductory paragraph: 
 - The task of generating new images in the style of a specific artist or artwork is challenging as it requires an understanding of the unique characteristics and techniques used by the artist. Our solution to this challenge is to train a neural network on a large dataset of images in the desired style.
+
 Paragraph 2. Background paragraph: 
 - Prior work in this field has focused on using transfer learning from pre-trained models, however, these models are not always able to capture the fine-grained details of a specific style. Our approach will involve training a neural network from scratch to overcome this limitation.
 Paragraph 3: 
