@@ -1,15 +1,14 @@
-# Instagram Popularity
-
-![cs152](https://user-images.githubusercontent.com/98056010/215841542-cb9a83f4-8414-4965-834e-a7e548a5c657.jpg)
+# Art.AI
 
 ## Project Description
 
-My project will focus on training neural networks (NNs) to predict the popularity of instagram posts. I want to determine which aspects of a post, its aestehtic value, the image content, and social metadata impact the popularity (otherwise known as viralness) of a post. In the end, my project will be able to determine, given a vareity of pictures, which one will become viral and why. I hope to do feature analysis on which aspects of the picture influence its popularity. 
-The longer term goal is to predict the popularity of longer videos like tiktoks and instagram reels to determine which videos may become viral. Additionally, I want to analyze how trends influence the popularity of posts or if posts influence what is trending. 
+The goal of our project is to train a neural network to apply the style of one image to another image. The network will be trained on a large dataset of style images and content images, and it will learn to transfer the style of the style image to the content image. The resulting model will be capable of transforming a simple photo into a masterpiece painting, for example. To add on to this, we want to train a Generative Adversarial Network (GAN) to take the style of one image and generate new images in the same style. The model will be capable of generating new images that are similar in style to the images in the training set.
 
 ## Project Goals
 
-1. Successfully scrape instagram posts to create a dataset for training a Neural Network.
-2. To accruately categorize the popularity of existing instagram posts. 
-3. Determine what features influence the popularity of instagram posts. 
-4. Predict the viralness of photos taken with varying features. 
+1. Collect a large dataset of style images and content images
+2. Train a neural network to transfer the style of a style image to a content image
+3. Train a GAN on the collected dataset 
+4. Evaluate the quality of the generated images using standard metrics
+5. Compare the results to other state-of-the-art models for style transfer
+6. Explore the potential of using the model for applications such as creating custom art pieces or enhancing the visual appeal of existing photos or videos
