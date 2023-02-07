@@ -17,7 +17,8 @@ The goal of our project is to train a neural network to apply the style of one i
 5. Compare the results to other state-of-the-art models for style transfer
 6. Explore the potential of using the model for applications such as creating custom art pieces or enhancing the visual appeal of existing photos or videos
 
-## Project Scope: The goal of this project is to train a neural network to create and transfer styles of images
+## Project Scope
+The goal of this project is to train a neural network to create and transfer styles of images
 
 #### Five to Ten Sentence Outline:
 Paragraph 1. Introductory paragraph: 
