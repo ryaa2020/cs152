@@ -1,6 +1,6 @@
 # Art.AI
 
-# Project Scope: The goal of this project is to train a neural network to generate new images in the style of a specific artist or artwork.
+## Project Scope: The goal of this project is to train a neural network to generate new images in the style of a specific artist or artwork.
 
 **Team members:** Maika Nishiguchi, Seho Kwak, and Rachel Yang
 
