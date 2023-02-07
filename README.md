@@ -1,6 +1,6 @@
 # Art.AI
 
-![](images/cs152.jpg)
+![](cs152.jpg)
 
 ## Project Description
 
