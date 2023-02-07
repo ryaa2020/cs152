@@ -10,10 +10,13 @@ Paragraph 1. Introductory paragraph:
 
 Paragraph 2. Background paragraph: 
 - Prior work in this field has focused on using transfer learning from pre-trained models, however, these models are not always able to capture the fine-grained details of a specific style. Our approach will involve training a neural network from scratch to overcome this limitation.
+
 Paragraph 3: 
 - Transition paragraph: By training a neural network from scratch, we can ensure that it has a deeper understanding of the desired style and is able to generate more accurate results.
+
 Paragraph 4: 
 - Details paragraph: The project will involve collecting a large dataset of images in the desired style, preprocessing the data, and training a neural network using a generative adversarial network (GAN) architecture. We will evaluate the quality of the generated images using standard metrics such as inception score and Fréchet Inception Distance (FID).
+
 Paragraph 5: 
 - Assessment paragraph: Our expected results are high-quality generated images in the style of the desired artist or artwork. These results support the conclusion that neural networks can be trained to generate new images in a specific style and have potential applications in areas such as digital art and advertising. The structure of the paper will include an introduction, background, methodology, results, and conclusion sections.
 
