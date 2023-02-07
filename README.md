@@ -20,6 +20,7 @@ The goal of our project is to train a neural network to apply the style of one i
 ## Project Scope
 The goal of this project is to train a neural network to create and transfer styles of images
 
+## Introduction Outline
 #### Five to Ten Sentence Outline:
 Paragraph 1. Introductory paragraph: 
 - The task of generating new images in the style of a specific artist or artwork is challenging as it requires an understanding of the unique characteristics and techniques used by the artist. Our solution to this challenge is to train a neural network on a large dataset of images in the desired style.
