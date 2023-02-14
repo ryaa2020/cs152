@@ -1,21 +1,13 @@
 ## Related Works 
 1. "Neural Style Transfer: A Review" by Yongcheng Jing, Yezhou Yang. Zunlei Feng,  Jingwen Ye, Yizhou Yu, and Mingli Song
-  - The review covers both traditional style transfer techniques, including texture synthesis, and deep learning-based approaches. 
-  It also discusses various optimization methods and loss functions used in neural style transfer, as well as techniques for improving 
-  the efficiency of the process. The paper concludes by examining the potential applications of neural style transfer and the challenges 
-  that must be overcome to make it a viable tool in various domains, including fashion, film, and art.
+  - The review covers both traditional style transfer techniques, including texture synthesis, and deep learning-based approaches. It also discusses various optimization methods and loss functions used in neural style transfer, as well as techniques for improving the efficiency of the process. The paper concludes by examining the potential applications of neural style transfer and the challenges that must be overcome to make it a viable tool in various domains, including fashion, film, and art.
     
 2. "Deep Generative Adversarial Networks for Image-to-Image Translation: A Review" by Aziz Alotaibi
-  - This article provides a comprehensive overview of image-to-image translation based on GAN algorithms and its variants. It also discusses 
-  and analyzes current state-of-the-art image-to-image translation techniques that are based on multimodal and multidomain representations. 
-    Finally, open issues and future research directions utilizing reinforcement learning and three-dimensional (3D) modal translation are 
-    summarized and discussed.
+  - This article provides a comprehensive overview of image-to-image translation based on GAN algorithms and its variants. It also discusses and analyzes current state-of-the-art image-to-image translation techniques that are based on multimodal and multidomain representations. Finally, open issues and future research directions utilizing reinforcement learning and three-dimensional (3D) modal translation are summarized and discussed.
   - link: https://doi.org/10.3390/sym12101705
    
 3. "GAN computers generate arts? A survey on visual arts, music, and literary text generation using generative adversarial network" by Sakib Shahriar
-  - This survey takes a comprehensive look at the recent works using GANs for generating visual arts, music, and literary text. A performance comparison 
-  and description of the various GAN architecture are also presented. Finally, some of the key challenges in GAN-based art generation are highlighted 
-  along with recommendations for future work.
+  - This survey takes a comprehensive look at the recent works using GANs for generating visual arts, music, and literary text. A performance comparison and description of the various GAN architecture are also presented. Finally, some of the key challenges in GAN-based art generation are highlighted along with recommendations for future work.
     
 4. "A Method for Style Transfer from Artistic Images Based on Depth Extraction Generative Adversarial Network" by Xinying Han, Yang Wu, and Rui Wan
   - The researchers propose a multi-feature extractor to extract color features, texture features, depth features, and shape masks from style images with U-net, multi-factor extractor, fast Fourier transform, and MiDas depth estimation network. At the same time, a self-encoder structure is used as the content extraction network core to generate a network that shares style parameters with the feature extraction network and finally realizes the generation of artwork images in three-dimensional artistic styles. The experimental analysis shows that compared with other advanced methods, DE-GAN-generated images have higher subjective image quality, and the generated style pictures are more consistent with the aesthetic characteristics of real works of art. The quantitative data analysis shows that images generated using the DE-GAN method have better performance in terms of structural features, image distortion, image clarity, and texture details. 
