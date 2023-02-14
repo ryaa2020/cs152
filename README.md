@@ -43,7 +43,7 @@ Paragraph 5. Assessment paragraph:
 - What processes will we use to handle appeals/mistakes? If any mistakes are made during the project, they will be addressed and corrected as needed.
 - How diverse is our team? Our team consists of three individuals with diverse backgrounds and experiences.
 
-## Related Works 
+## Related Works Search
 1. "Neural Style Transfer: A Review" by Yongcheng Jing, Yezhou Yang. Zunlei Feng,  Jingwen Ye, Yizhou Yu, and Mingli Song
     - The review covers both traditional style transfer techniques, including texture synthesis, and deep learning-based approaches. It also discusses various optimization methods and loss functions used in neural style transfer, as well as techniques for improving the efficiency of the process. The paper concludes by examining the potential applications of neural style transfer and the challenges that must be overcome to make it a viable tool in various domains, including fashion, film, and art.
     - link: https://www.researchgate.net/publication/333702745_Neural_Style_Transfer_A_Review
