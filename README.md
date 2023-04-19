@@ -35,16 +35,19 @@ We succeeded in running the PyTorch tutorial code with baby photos and artworks,
 7. Modify the tutorial code to include the blending function, which combines the two style-transferred halves of the content image into a single output image. This blending can be achieved using the ‘paste()’ function from the PIL library, pasting one half onto the other.
 8. Postprocess the optimized image by converting the tensor back to a PIL image, and then de-normalizing the pixel values to the original range (0-255). The final image can be saved or displayed using the PIL library.
 
-'''
     for baby in baby images:
-      content_image = Image.open(baby)
+      for baby in baby_images:
+        content_image = Image.open(baby)
       
-      left_half, right_half = split_image(content_image)
-      left_img = content_image_loader(left_half)
-      right_img = content_image_loader(right_half)
+        left_half, right_half = split_image(content_image)
+        left_img = content_image_loader(left_half)
+        right_img = content_image_loader(right_half)
       
-      input_left_img = left_img.clone()
-'''
+        input_left_img = left_img.clone()
+        input_right_img = right_img.clone()
+        
+        style_left = run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std, left_img, style_img_1, input_left_img)
+        style_right = run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std, right_img, style_img_2, input_right_img)
 
 ## Discussion
 In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal, as outlined below.
