@@ -36,8 +36,8 @@ We succeeded in running the PyTorch tutorial code with baby photos and artworks,
 8. Postprocess the optimized image by converting the tensor back to a PIL image, and then de-normalizing the pixel values to the original range (0-255). The final image can be saved or displayed using the PIL library.
 
 '''
-    for baby in baby images:
-    content_image = Image.open(baby)
+        for baby in baby images:
+        content_image = Image.open(baby)
       
         left_half, right_half = split_image(content_image)
         left_img = content_image_loader(left_half)
