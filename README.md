@@ -67,7 +67,7 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 </p>
 
 ### Output Image! 
-![](output.JPEG)
+<img src=output.JPEG width="600" height="600" /> 
 
 ## Ethics Discussion
 
