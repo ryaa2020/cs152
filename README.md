@@ -4,63 +4,56 @@
 
 ![](cs152.jpg)
 
-## Project Description
+## Introduction & Related Works
+Neural style transfer is a captivating and rapidly expanding area of research in computer vision and graphics. This technique involves transferring the style from one image to another, essentially blending the content of a target image with the style of a source image. The process can be viewed as a texture transfer problem, where the goal is to synthesize a texture from the source image while preserving the semantic content of the target image.
 
-The goal of our project is to train a neural network to apply the style of one image to another image. The network will be trained on a large dataset of style images and content images, and it will learn to transfer the style of the style image to the content image. The resulting model will be capable of transforming a simple photo into a masterpiece painting, for example. To add on to this, we want to train a Generative Adversarial Network (GAN) to take the style of one image and generate new images in the same style. The model will be capable of generating new images that are similar in style to the images in the training set.
+A successful style transfer algorithm should extract the semantic content of the target image, such as objects and general scenery, and use this information to guide a texture transfer process that renders the content in the style of the source image. This requires the algorithm to (1) recognize objects in the target image and (2) recombine the objects and style of the source image.
 
-## Project Goals
+Convolutional neural networks (CNNs) have emerged as the most popular method for achieving this task. Gatys et al. (2016) demonstrated the use of image representations from CNNs optimized for object recognition to transfer the style of a reference image onto an input target image. Similarly, Li et al. (2021) explored how CNNs can be applied to process 2-D images, including object detection and image classification. Luan et al. (2017) built upon this approach by augmenting the algorithm to achieve more photorealistic style transfer while minimizing distortion. Additionally, Kotovenko et al. (2019) introduced a content transformation module between the encoder and decoder to reduce extra deformations, additions, and deletions of content details, learning how style influences content details and generalizing this to other class details.
 
-1. Collect a large dataset of style images and content images
-2. Train a neural network to transfer the style of a style image to a content image
-3. Train a GAN on the collected dataset 
-4. Evaluate the quality of the generated images using standard metrics
-5. Compare the results to other state-of-the-art models for style transfer
-6. Explore the potential of using the model for applications such as creating custom art pieces or enhancing the visual appeal of existing photos or videos
+For our project, we will use baby photos from the dataset https://www.kaggle.com/datasets/cocowaffle/baby-photos as content images and famous artworks from https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time as style images. We will start by replicating the neural style transfer tutorial available at https://pytorch.org/tutorials/advanced/neural_style_tutorial.html and adjust the parameters to train our model using the chosen datasets. Our primary focus will be on baby photos, applying different art styles to these images.
 
-## Project Scope
-The goal of this project is to train a neural network to create and transfer styles of images
+Our goal is to split one photo in half, applying two different art styles to each half of the image. We will experiment with blending multiple styles into the output image and apply each style to different regions of the image.
 
-## Introduction Outline
-#### Five to Ten Sentence Outline:
-Paragraph 1. Introductory paragraph: 
-- The task of generating new images in the style of a specific artist or artwork is challenging as it requires an understanding of the unique characteristics and techniques used by the artist. Our solution to this challenge is to train a neural network on a large dataset of images in the desired style.
+## Methods
 
-Paragraph 2. Background paragraph: 
-- Prior work in this field has focused on using transfer learning from pre-trained models, however, these models are not always able to capture the fine-grained details of a specific style. Our approach will involve training a neural network from scratch to overcome this limitation.
+We employed PyTorch as the primary software for our neural network implementation, taking advantage of its flexibility and efficiency in building and training models. Using the baby photos dataset (https://www.kaggle.com/datasets/cocowaffle/baby-photos) as our content images and the best artworks dataset (https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time) for style images, we created a unique dataset tailored to our project's goals.
 
-Paragraph 3. Transition paragraph: 
-- By training a neural network from scratch, we can ensure that it has a deeper understanding of the desired style and is able to generate more accurate results.
+A convolutional neural network (CNN) served as the core of our model, as it is adept at identifying patterns and features in images, which is crucial for recognizing different art styles. Our inputs consisted of three-channel images represented as matrices of pixel values, which the model used to extract content and style information.
 
-Paragraph 4. Details paragraph: 
-- The project will involve collecting a large dataset of images in the desired style, preprocessing the data, and training a neural network using a generative adversarial network (GAN) architecture. We will evaluate the quality of the generated images using standard metrics such as inception score and Fréchet Inception Distance (FID).
+The output of our neural style transfer model was a visually appealing image that fuses the style of two different images with the content of a baby photo. This three-channel image, with the same shape and type as the input image, was intended to produce an aesthetic result rather than serve any specific classification, regression, or segmentation task.
 
-Paragraph 5. Assessment paragraph: 
-- Our expected results are high-quality generated images in the style of the desired artist or artwork. These results support the conclusion that neural networks can be trained to generate new images in a specific style and have potential applications in areas such as digital art and advertising. The structure of the paper will include an introduction, background, methodology, results, and conclusion sections.
+We succeeded in running the PyTorch tutorial code with baby photos and artworks, making our project unique by modifying the code so that we can create an output image where each half has a different style. 
 
-#### Ethical Sweep:
-- Should we even be doing this? This project is focused on creating new artwork using artificial intelligence which may raise discussions on AI having a negative impact towards artists. 
-- What might be the accuracy of a simple non-ML alternative? A simple non-ML alternative, such as manual painting or drawing, may not be able to generate as many high-quality images in a specific style as a neural network.
-- What processes will we use to handle appeals/mistakes? If any mistakes are made during the project, they will be addressed and corrected as needed.
-- How diverse is our team? Our team consists of three individuals with diverse backgrounds and experiences.
+## Discussion
+In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal, as outlined below.
 
-## Related Works Search
-1. "Neural Style Transfer: A Review" by Yongcheng Jing, Yezhou Yang. Zunlei Feng,  Jingwen Ye, Yizhou Yu, and Mingli Song
-    - The review covers both traditional style transfer techniques, including texture synthesis, and deep learning-based approaches. It also discusses various optimization methods and loss functions used in neural style transfer, as well as techniques for improving the efficiency of the process. The paper concludes by examining the potential applications of neural style transfer and the challenges that must be overcome to make it a viable tool in various domains, including fashion, film, and art.
-    - link: https://www.researchgate.net/publication/333702745_Neural_Style_Transfer_A_Review
-    
-2. "Deep Generative Adversarial Networks for Image-to-Image Translation: A Review" by Aziz Alotaibi
-    - This article provides a comprehensive overview of image-to-image translation based on GAN algorithms and its variants. It also discusses and analyzes current state-of-the-art image-to-image translation techniques that are based on multimodal and multidomain representations. Finally, open issues and future research directions utilizing reinforcement learning and three-dimensional (3D) modal translation are summarized and discussed.
-  - link: https://doi.org/10.3390/sym12101705
-   
-3. "GAN computers generate arts? A survey on visual arts, music, and literary text generation using generative adversarial network" by Sakib Shahriar
-    - This survey takes a comprehensive look at the recent works using GANs for generating visual arts, music, and literary text. A performance comparison and description of the various GAN architecture are also presented. Finally, some of the key challenges in GAN-based art generation are highlighted along with recommendations for future work.
-    - link: https://doi.org/10.1016/j.displa.2022.102237
-    
-4. "A Method for Style Transfer from Artistic Images Based on Depth Extraction Generative Adversarial Network" by Xinying Han, Yang Wu, and Rui Wan
-    - The researchers propose a multi-feature extractor to extract color features, texture features, depth features, and shape masks from style images with U-net, multi-factor extractor, fast Fourier transform, and MiDas depth estimation network. At the same time, a self-encoder structure is used as the content extraction network core to generate a network that shares style parameters with the feature extraction network and finally realizes the generation of artwork images in three-dimensional artistic styles. The experimental analysis shows that compared with other advanced methods, DE-GAN-generated images have higher subjective image quality, and the generated style pictures are more consistent with the aesthetic characteristics of real works of art. The quantitative data analysis shows that images generated using the DE-GAN method have better performance in terms of structural features, image distortion, image clarity, and texture details. 
-    - link: https://doi.org/10.3390/app13020867
-    
-5. "Neural Style Transfer: A Paradigm Shift for Image-based Artistic Rendering?" by Amir Semmo, Tobias Isenberg, and Jürgen Döllner
-    - The authors discuss the potential benefits of neural style transfer, including the ability to create high-quality, artistically styled images quickly and easily, as well as the potential for automating certain aspects of the artistic process. They also explore the limitations and challenges of neural style transfer, such as the difficulty of controlling the output and the potential for over-reliance on pre-existing styles. The paper concludes by proposing future research directions, including the need for a better understanding of the relationship between style and content in neural style transfer, and the development of new techniques for style transfer that address some of its current limitations.
-    - link: https://www.researchgate.net/publication/317105787_Neural_Style_Transfer_A_Paradigm_Shift_for_Image-based_Artistic_Rendering
+1. Load the content and style images, resizing them to the desired dimensions using the provided image resizing function.
+2. Preprocess the images, normalizing pixel values and converting them to tensors, as per the tutorial's instructions.
+3. Initialize the CNN architecture with pre-trained weights following the tutorial's guidelines.
+4. Define the content and style loss functions, which quantify how well the content and style are preserved in the generated image, as described in the tutorial.
+5. Initialize two input images for each half of the final output, either with random noise or the content image, to be optimized during the process.
+6. Optimize the input images iteratively, adjusting their pixel values to minimize the combined content and style losses, following the tutorial's optimization procedure.
+7. Modify the tutorial code to include the blending function provided earlier, which combines the two style-transferred halves of the content image into a single output image.
+8. Postprocess the optimized image, converting it back to its original format and size, as instructed in the tutorial.
 
+Our results demonstrate the visual appeal and effectiveness of combining two different art styles in one image, applied to baby photos. In the upcoming complete draft, we will assess the quality of the style transfer, the preservation of content, and the blending of the two styles in the output images by visually comparing them to the original content and style images. We will include example images within the discussion section to support our evaluation. Additionally, we will compare our work to the original neural style transfer algorithm and other variations, highlighting any improvements or unique features in our approach, such as the ability to blend two styles seamlessly in a single output image. This comparison will be further refined and substantiated in the complete draft, providing a thorough and convincing analysis of our project's results.
+
+By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
+
+## Ethics Discussion
+
+While our project focuses on the artistic aspect of neural style transfer, it is essential to consider the ethical implications that may arise from using this technology. One area of concern is the potential for copyright infringement when using and modifying existing artworks or photographs. As we utilize famous artworks from various artists for our style images, we must ensure that we are respecting their intellectual property rights and acknowledging their contributions. It is also crucial to obtain permission from the owners of the baby photos used as content images, as these images involve personal data and may be subject to privacy concerns.
+
+Another ethical consideration is the potential misuse of neural style transfer for creating misleading or manipulative images. By blending different styles and altering the content of an image, the technology could be exploited to generate deceptive or malicious content, such as deepfake images or misinformation. It is the responsibility of researchers and developers to create guidelines and implement safeguards to prevent such misuse of the technology.
+
+Lastly, it is crucial to consider the cultural implications of blending artistic styles from different origins. The merging of styles from various cultures and time periods could be seen as a celebration of diversity and creativity. However, it is essential to approach this process with cultural sensitivity, ensuring that the final output does not inadvertently misrepresent or appropriate cultural elements in a disrespectful manner. By considering these ethical concerns, we aim to contribute to the responsible development and application of neural style transfer technology.
+
+## Reflection
+Reflecting on our work, there are a few things we would do differently next time. First, we would explore additional methods for blending multiple styles in the output image, such as incorporating more sophisticated algorithms or incorporating the use of deep learning techniques. This could potentially lead to more visually appealing results and better preservation of content and style.
+
+Furthermore, we would like to expand our project by exploring other applications of neural style transfer beyond baby photos. There are many potential avenues for research, such as applying neural style transfer to video or 3D models, which could lead to exciting new developments in the field.
+
+In future work, we would also consider comparing the performance of different neural network architectures, such as ResNets, YOLO, Inception, and custom models, to determine which is most suitable for our particular application. This could involve comparing different sets of hyperparameter values, frameworks (e.g., PyTorch, TensorFlow), and even creating an application for our final model.
+
+Overall, our project demonstrates the potential of neural style transfer for creating visually appealing images with unique artistic combinations. By building on existing research and exploring new applications, we contribute to the growing body of knowledge in this exciting field.
