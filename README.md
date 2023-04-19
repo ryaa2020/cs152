@@ -2,7 +2,7 @@
 
 **Team members:** Maika Nishiguchi, Seho Kwak, and Rachel Yang
 
-<img src=babyPhoto1.png width="100" height="100">
+<img src=babyPhoto1.png width="500" height="500">
 
 ## Introduction & Related Works
 Neural style transfer is a captivating and rapidly expanding area of research in computer vision and graphics. This technique involves transferring the style from one image to another, essentially blending the content of a target image with the style of a source image. The process can be viewed as a texture transfer problem, where the goal is to synthesize a texture from the source image while preserving the semantic content of the target image.
