@@ -15,6 +15,7 @@ For our project, we will use baby photos from the dataset https://www.kaggle.com
 
 Our goal is to split one photo in half, applying two different art styles to each half of the image. We will experiment with blending multiple styles into the output image and apply each style to different regions of the image.
 
+
 ## Methods
 
 We employed PyTorch as the primary software for our neural network implementation, taking advantage of its flexibility and efficiency in building and training models. Using the baby photos dataset (https://www.kaggle.com/datasets/cocowaffle/baby-photos) as our content images and the best artworks dataset (https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time) for style images, we created a unique dataset tailored to our project's goals.
@@ -24,6 +25,19 @@ A convolutional neural network (CNN) served as the core of our model, as it is a
 The output of our neural style transfer model was a visually appealing image that fuses the style of two different images with the content of a baby photo. This three-channel image, with the same shape and type as the input image, was intended to produce an aesthetic result rather than serve any specific classification, regression, or segmentation task.
 
 We succeeded in running the PyTorch tutorial code with baby photos and artworks, making our project unique by modifying the code so that we can create an output image where each half has a different style. 
+
+1. Load the content and style images using the ‘Image.open’ function from the Python Imaging Library (PIL). Resize the images to the desired dimensions using the ‘transforms.Resize’ function from the PyTorch ‘transforms’ module.
+2. Preprocess the images by normalizing the pixel values for each color channel (Red, Green, and Blue) and converting the images to tensors using the ‘transforms.ToTensor’ function. The normalization is necessary because neural networks in the PyTorch library are trained with tensor values ranging from 0 to 1.
+3. Initialize the CNN architecture with pre-trained weights by following the tutorial's guidelines. In this case, the architecture used is VGG19, a pre-trained convolutional neural network that has proven to be effective for style transfer tasks. Load the VGG19 model using the ‘torchvision.models.vgg19’ function, and extract the necessary layers to compute the content and style features.
+4. Define the content and style loss functions using the ‘nn.Module’ class from PyTorch. The content loss function quantifies how well the content is preserved in the generated image, while the style loss function measures the preservation of style. The functions are computed based on the Gram matrix, which is used to capture the style information from the style image.
+5. Initialize two input images (one for each half of the final output) as tensors to be optimized during the process. The two input images will be optimized separately to generate the style-transferred halves of the content image.
+6. Optimize the input images iteratively using the L-BFGS optimization algorithm provided by PyTorch's ‘torch.optim’ module. Adjust the pixel values of the input images to minimize the combined content and style losses.
+7. Modify the tutorial code to include the blending function, which combines the two style-transferred halves of the content image into a single output image. This blending can be achieved using the ‘paste()’ function from the PIL library, pasting one half onto the other.
+8. Postprocess the optimized image by converting the tensor back to a PIL image, and then de-normalizing the pixel values to the original range (0-255). The final image can be saved or displayed using the PIL library.
+
+'''
+for baby in baby images
+'''
 
 ## Discussion
 In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal, as outlined below.
