@@ -57,6 +57,16 @@ Our results demonstrate the visual appeal and effectiveness of combining two dif
 
 By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
 
+#### Baby Image
+![](content_input.JPEG)
+
+### Style Images
+![](style1_input.JPEG)
+![](style2_input.JPEG)
+
+#### Output Image! 
+![](output.JPEG)
+
 ## Ethics Discussion
 
 While our project focuses on the artistic aspect of neural style transfer, it is essential to consider the ethical implications that may arise from using this technology. One area of concern is the potential for copyright infringement when using and modifying existing artworks or photographs. As we utilize famous artworks from various artists for our style images, we must ensure that we are respecting their intellectual property rights and acknowledging their contributions. It is also crucial to obtain permission from the owners of the baby photos used as content images, as these images involve personal data and may be subject to privacy concerns.
