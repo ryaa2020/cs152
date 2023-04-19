@@ -2,7 +2,7 @@
 
 **Team members:** Maika Nishiguchi, Seho Kwak, and Rachel Yang
 
-<img src=babyPhoto1.png width="700" height="600"/>
+<img src=babyPhoto1.png/>
 
 ## Introduction & Related Works
 Neural style transfer is a captivating and rapidly expanding area of research in computer vision and graphics. This technique involves transferring the style from one image to another, essentially blending the content of a target image with the style of a source image. The process can be viewed as a texture transfer problem, where the goal is to synthesize a texture from the source image while preserving the semantic content of the target image.
@@ -58,7 +58,7 @@ Our results demonstrate the visual appeal and effectiveness of combining two dif
 By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
 
 ### Baby Image
-<img src=content_input.JPEG width="600" height="600" />
+<img src=content_input.JPEG width="700" height="600" />
 
 ### Style Images
 <p float="left">
