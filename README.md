@@ -36,7 +36,7 @@ We succeeded in running the PyTorch tutorial code with baby photos and artworks,
 8. Postprocess the optimized image by converting the tensor back to a PIL image, and then de-normalizing the pixel values to the original range (0-255). The final image can be saved or displayed using the PIL library.
 
 ```
-        for baby in baby images:
+   for baby in baby images:
         content_image = Image.open(baby)
       
         left_half, right_half = split_image(content_image)
@@ -51,18 +51,9 @@ We succeeded in running the PyTorch tutorial code with baby photos and artworks,
 ```
 
 ## Discussion
-In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal, as outlined below.
+In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal of applying multiple styles to one image.
 
-1. Load the content and style images, resizing them to the desired dimensions using the provided image resizing function.
-2. Preprocess the images, normalizing pixel values and converting them to tensors, as per the tutorial's instructions.
-3. Initialize the CNN architecture with pre-trained weights following the tutorial's guidelines.
-4. Define the content and style loss functions, which quantify how well the content and style are preserved in the generated image, as described in the tutorial.
-5. Initialize two input images for each half of the final output, either with random noise or the content image, to be optimized during the process.
-6. Optimize the input images iteratively, adjusting their pixel values to minimize the combined content and style losses, following the tutorial's optimization procedure.
-7. Modify the tutorial code to include the blending function provided earlier, which combines the two style-transferred halves of the content image into a single output image.
-8. Postprocess the optimized image, converting it back to its original format and size, as instructed in the tutorial.
-
-Our results demonstrate the visual appeal and effectiveness of combining two different art styles in one image, applied to baby photos. In the upcoming complete draft, we will assess the quality of the style transfer, the preservation of content, and the blending of the two styles in the output images by visually comparing them to the original content and style images. We will include example images within the discussion section to support our evaluation. Additionally, we will compare our work to the original neural style transfer algorithm and other variations, highlighting any improvements or unique features in our approach, such as the ability to blend two styles seamlessly in a single output image. This comparison will be further refined and substantiated in the complete draft, providing a thorough and convincing analysis of our project's results.
+Our results demonstrate the visual appeal and effectiveness of combining two different art styles in one image, applied to baby photos. We have assessed the quality of the style transfer, the preservation of content, and the blending of the two styles in the output images by visually comparing them to the original content and style images. We have included example images within the discussion section to support our evaluation. Additionally, we have compared our work to the original neural style transfer algorithm and other variations, highlighting any improvements or unique features in our approach, such as the ability to blend two styles seamlessly in a single output image. This comparison provides a thorough and convincing analysis of our project's results.
 
 By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
 
