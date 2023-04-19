@@ -37,7 +37,7 @@ We succeeded in running the PyTorch tutorial code with baby photos and artworks,
 
 '''
     for baby in baby images:
-        content_image = Image.open(baby)
+    content_image = Image.open(baby)
       
         left_half, right_half = split_image(content_image)
         left_img = content_image_loader(left_half)
