@@ -57,14 +57,14 @@ Our results demonstrate the visual appeal and effectiveness of combining two dif
 
 By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
 
-#### Baby Image
+### Baby Image
 ![](content_input.JPEG)
 
 ### Style Images
 ![](style1_input.JPEG)
 ![](style2_input.JPEG)
 
-#### Output Image! 
+### Output Image! 
 ![](output.JPEG)
 
 ## Ethics Discussion
