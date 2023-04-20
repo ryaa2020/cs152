@@ -61,10 +61,8 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 ![](content_input.JPEG)
 
 ### Style Images
-<p float="left">
-  ![](style1_input.JPEG)
-  ![](style2_input.JPEG)
-</p>
+![](style1_input.JPEG)
+![](style2_input.JPEG)
 
 ### Output Image! 
 ![](output.JPEG)
