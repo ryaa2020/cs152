@@ -2,7 +2,6 @@
 
 **Team members:** Maika Nishiguchi, Seho Kwak, and Rachel Yang
 
-<img src=babyPhoto1.png/>
 ![](babyPhoto1.png)
 
 ## Introduction & Related Works
