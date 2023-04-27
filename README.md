@@ -13,19 +13,19 @@ Figure 1. Images that combine the content of a photograph with the style of seve
 
 Convolutional neural networks (CNNs) have emerged as the most popular method for achieving this task. Gatys et al. (2016)[1] demonstrated the use of image representations from CNNs optimized for object recognition to transfer the style of a reference image onto an input target image. Similarly, Li et al. (2021)[2] explored how CNNs can be applied to process 2-D images, including object detection and image classification. Luan et al. (2017)[3] built upon this approach by augmenting the algorithm to achieve more photorealistic style transfer while minimizing distortion. Additionally, Kotovenko et al. (2019)[4] introduced a content transformation module between the encoder and decoder to reduce extra deformations, additions, and deletions of content details, learning how style influences content details and generalizing this to other class details.
 
-For our project, we will use baby photos from the [dataset](https://www.kaggle.com/datasets/cocowaffle/baby-photos) as content images and famous artworks from another dataset as style images. We will start by replicating the neural style transfer tutorial available on the PyTorch website and adjust the parameters to train our model using the chosen datasets. Our primary focus will be on baby photos, applying different art styles to these images.
+For our project, we will use baby photos from the [dataset](https://www.kaggle.com/datasets/cocowaffle/baby-photos) as content images and famous artworks from [another dataset](https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time) as style images. We will start by replicating the [neural style transfer tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) available on the PyTorch website and adjust the parameters to train our model using the chosen datasets. Our primary focus will be on baby photos, applying different art styles to these images.
 
 Our goal is to split one photo in half, applying two different art styles to each half of the image. We will experiment with blending multiple styles into the output image and apply each style to different regions of the image.
 
 ## Methods
 
-We employed PyTorch as the primary software for our neural network implementation, taking advantage of its flexibility and efficiency in building and training models. Using the baby photos dataset as our content images and the best artworks dataset for style images, we created a unique dataset tailored to our project's goals.
+We employed PyTorch as the primary software for our neural network implementation, taking advantage of its flexibility and efficiency in building and training models. Using the [baby photos dataset](https://www.kaggle.com/datasets/cocowaffle/baby-photos) as our content images and the [best artworks dataset](https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time) for style images, we created a unique dataset tailored to our project's goals.
 
 In this study, we utilized the pre-trained VGG19 convolutional neural network (CNN) architecture available in the PyTorch library. The VGG19 model consists of 16 convolutional layers, 5 max-pooling layers, 3 fully connected layers, and 1 softmax layer. We chose VGG-19 for its performance and ease of use in extracting features for style transfer. 
 
 Our inputs consisted of three-channel images represented as matrices of pixel values, which the model used to extract content and style information. The output of our neural style transfer model was a visually appealing image that fuses the style of two different images with the content of a baby photo. This three-channel image, with the same shape and type as the input image, was intended to produce an aesthetic result rather than serve any specific classification, regression, or segmentation task.
 
-We modified the PyTorch tutorial code to create an output image where each half has a different style, by implementing the following changes:
+We modified the [PyTorch tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) code to create an output image where each half has a different style, by implementing the following changes:
 
 1.Load the two style images separately using the `style_image_loader` function.
 ```
