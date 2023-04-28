@@ -124,6 +124,7 @@ In future work, we would also consider comparing the performance of different ne
 Overall, our project demonstrates the potential of neural style transfer for creating visually appealing images with unique artistic combinations. By building on existing research and exploring new applications, we contribute to the growing body of knowledge in this exciting field.
 
 References 
+
 [^1]: Gatys, L. A., Ecker, A. S., & Bethge, M. (2016). Image style transfer using convolutional neural networks. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 2414-2423).
 
 [^2]: Li, Z., Liu, F., Yang, W., Peng, S., & Zhou, J. (2021). A survey of convolutional neural networks: analysis, applications, and prospects. IEEE transactions on neural networks and learning systems.
