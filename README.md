@@ -131,6 +131,7 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 
 ### Web App Demo
 In these videos, we show a demo of our code and web app! 
+
 https://user-images.githubusercontent.com/98056010/235505188-b50fe4c6-7e92-4223-8e9f-52228460d38e.mov
 
 https://user-images.githubusercontent.com/98056010/235505437-80043370-6c9e-4ba9-a2c6-8f6680d93767.mov
