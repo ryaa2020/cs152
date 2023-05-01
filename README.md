@@ -27,7 +27,7 @@ Our inputs consisted of three-channel images represented as matrices of pixel va
 
 We modified the [PyTorch tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) code to create an output image where each half has a different style, by implementing the following changes:
 
-1.Load the two style images separately using the `style_image_loader` function.
+1. Load the two style images separately using the `style_image_loader` function.
 ```
    def style_image_loader(image_name):
       image = Image.open(image_name)
