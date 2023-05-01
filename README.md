@@ -4,6 +4,17 @@
 
 ![](babyPhoto1.png)
 
+## Abstract
+In this project, we present a novel approach to neural style transfer for creating visually appealing baby portraits by combining two different artistic styles. By splitting the input image into two halves and applying distinct styles to each half, we aim to generate a unique and engaging output. Our approach leverages the power of convolutional neural networks (CNNs), specifically the VGG19 architecture, to extract content and style features from the input images and generate the stylized output.
+
+We implement our neural style transfer algorithm using the PyTorch framework and utilize VGG19's pretrained model to extract the features necessary for content and style representation. The content and style losses are computed using the mean squared error between the respective feature representations in the input and generated images. The optimization process is carried out using the L-BFGS optimization algorithm, which iteratively updates the input image until convergence.
+
+In our implementation, we first split the content image (baby portrait) into two halves. We then apply two different artistic styles to the left and right halves of the content image. The final output is obtained by merging the stylized left and right halves to form a single image that seamlessly combines the two styles.
+
+To evaluate the effectiveness of our approach, we showcase results obtained from applying our neural style transfer algorithm to several baby portraits. The outputs demonstrate the successful combination of the two distinct artistic styles, resulting in visually engaging and unique baby portraits. We also provide intermediate results from before the network was trained and after only a few epochs, illustrating the gradual evolution of the generated images.
+
+Future work could involve applying different artistic styles to various parts of the image or different shapes instead of just splitting it in half, as done in our project. Additionally, we could explore other applications of neural style transfer beyond baby photos, such as video or 3D models, to further extend the capabilities and applications of this technique. Overall, our project contributes to the growing body of research in neural style transfer and showcases its potential for creating captivating, personalized artwork.
+
 ## Introduction & Related Works
 Neural style transfer is a captivating and rapidly expanding area of research in computer vision and graphics. This technique involves transferring the style from one image to another, essentially blending the content of a target image with the style of a source image. The process can be viewed as a texture transfer problem, where the goal is to synthesize a texture from the source image while preserving the semantic content of the target image. An example of neural style transfer can be seen in Gatys et al. (2016)[^1], where the style of famous paintings is applied to various photographs, as shown in the images below.
 
@@ -117,9 +128,9 @@ Lastly, it is crucial to consider the cultural implications of blending artistic
 ## Reflection
 Reflecting on our work, there are a few things we would do differently next time. First, we would explore additional methods for blending multiple styles in the output image, such as incorporating more sophisticated algorithms or incorporating the use of deep learning techniques. This could potentially lead to more visually appealing results and better preservation of content and style.
 
-Furthermore, we would like to expand our project by exploring other applications of neural style transfer beyond baby photos. There are many potential avenues for research, such as applying neural style transfer to video or 3D models, which could lead to exciting new developments in the field.
+In addition to these improvements, we also envision integrating more advanced user interaction capabilities into our web application. This could include allowing users to manually select regions of the content image to apply different styles, or even offering a brush tool for painting the styles directly onto the image. Such features would provide users with greater control over the final output, enabling them to create truly personalized and unique art pieces.
 
-In future work, we would also consider comparing the performance of different neural network architectures, such as ResNets, YOLO, Inception, and custom models, to determine which is most suitable for our particular application. This could involve comparing different sets of hyperparameter values, frameworks (e.g., PyTorch, TensorFlow), and even creating an application for our final model.
+Furthermore, we would like to expand our project by exploring other applications of neural style transfer beyond baby photos. There are many potential avenues for research, such as applying neural style transfer to video or 3D models, which could lead to exciting new developments in the field.
 
 Overall, our project demonstrates the potential of neural style transfer for creating visually appealing images with unique artistic combinations. By building on existing research and exploring new applications, we contribute to the growing body of knowledge in this exciting field.
 
