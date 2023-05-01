@@ -103,7 +103,7 @@ This method allows you to create a new image that combines the content of a baby
 ## Discussion
 In this project, we aimed to create a unique application of neural style transfer by blending two different art styles in each half of a baby photo. We started with the PyTorch neural style transfer tutorial, which uses a pre-trained convolutional neural network (CNN) architecture to transfer the style of a reference image onto an input target image. We then modified the code to achieve our specific goal of applying multiple styles to one image.
 
-Our results showcase the visual appeal and effectiveness of blending two distinct art styles in a single image, specifically when applied to baby photos. We have evaluated the quality of the style transfer by examining several aspects: the preservation of content from the original image, the accurate representation of both art styles, and the seamless integration of the two styles in the output images. To better understand and explain our evaluation, we have included example videos and images. These videos allow for a direct comparison between the original content and style images and the final results, highlighting the successful combination of different art styles in a single output image. Additionally, we have compared our work to the original neural style transfer algorithm and other variations, highlighting any improvements or unique features in our approach, such as the ability to blend two styles seamlessly in a single output image. This comparison provides a thorough and convincing analysis of our project's results.
+Our results showcase the visual appeal and effectiveness of blending two distinct art styles in a single image, specifically when applied to baby photos. We have evaluated the quality of the style transfer by examining several aspects: the preservation of content from the original image, the accurate representation of both art styles, and the seamless integration of the two styles in the output images. To better understand and explain our evaluation, we have included example videos and images. These videos allow for a direct comparison between the original content and style images and the final results, highlighting the successful combination of different art styles in a single output image. We also showcased how the output images evolved during the optimization process by displaying images after multiple steps, ranging from 10 to 500. Our approach effectively demonstrates the ability to blend two styles seamlessly in a single output image. Example images can be found below to support our evaluation
 
 By building upon the PyTorch tutorial and incorporating custom datasets for content and style images, we have contributed to the growing body of research in neural style transfer and demonstrated the potential of exploring diverse applications in this area.
 
@@ -130,6 +130,7 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 ![out5](https://user-images.githubusercontent.com/98056010/235547550-95becfe3-5753-485b-b396-1cb32eaa3a62.jpeg)
 
 ### Web App Demo
+In these videos, we show a demo of our code and web app! 
 https://user-images.githubusercontent.com/98056010/235505188-b50fe4c6-7e92-4223-8e9f-52228460d38e.mov
 
 https://user-images.githubusercontent.com/98056010/235505437-80043370-6c9e-4ba9-a2c6-8f6680d93767.mov
