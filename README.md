@@ -117,6 +117,8 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 ### Output Image! 
 ![](output.JPEG)
 
+https://user-images.githubusercontent.com/98056010/235505188-b50fe4c6-7e92-4223-8e9f-52228460d38e.mov
+
 ## Ethics Discussion
 
 While our project focuses on the artistic aspect of neural style transfer, it is essential to consider the ethical implications that may arise from using this technology. One area of concern is the potential for copyright infringement when using and modifying existing artworks or photographs. As we utilize famous artworks from various artists for our style images, we must ensure that we are respecting their intellectual property rights and acknowledging their contributions. It is also crucial to obtain permission from the owners of the baby photos used as content images, as these images involve personal data and may be subject to privacy concerns.
