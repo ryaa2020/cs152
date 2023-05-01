@@ -117,6 +117,18 @@ By building upon the PyTorch tutorial and incorporating custom datasets for cont
 ### Output Image! 
 ![](output.JPEG)
 
+### 10 steps
+![out10](https://user-images.githubusercontent.com/98056010/235547499-12310dd1-69dd-4978-aef7-eac0635088a8.jpeg)
+
+### 50 steps
+![out50](https://user-images.githubusercontent.com/98056010/235547518-ecc3a38b-796d-4306-ab0d-e8f766ee8e43.jpeg)
+
+### 100 steps
+![out1](https://user-images.githubusercontent.com/98056010/235547538-d57954d1-cd9a-45f9-aa6d-4a80ad35983b.jpeg)
+
+### 500 steps
+![out5](https://user-images.githubusercontent.com/98056010/235547550-95becfe3-5753-485b-b396-1cb32eaa3a62.jpeg)
+
 ### Web App Demo
 https://user-images.githubusercontent.com/98056010/235505188-b50fe4c6-7e92-4223-8e9f-52228460d38e.mov
 
